@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+    <meta name="theme-color" content="#0D1117">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>إلى مي... | رسالة من القلب</title>
+    <meta name="description" content="رسالة حب مكتوبة من القلب... إلى مي">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,700&family=Lateef:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Persistent golden particles canvas -->
+    <canvas id="particles"></canvas>
+
+    <!-- Ambient glow orbs -->
+    <div class="ambient-glow" id="ambient-glow">
+        <div class="glow-orb glow-1"></div>
+        <div class="glow-orb glow-2"></div>
+        <div class="glow-orb glow-3"></div>
+    </div>
+
+    <!-- ===== START OVERLAY ===== -->
+    <div id="start-overlay">
+        <div class="start-content">
+            <div class="star-icon">✦</div>
+            <p class="start-text">انقر لبدء التجربة</p>
+            <div class="start-pulse"></div>
+        </div>
+    </div>
+
+    <!-- ===== INTRO OVERLAY ===== -->
+    <div id="intro-overlay">
+        <div class="intro-content">
+            <h1 class="intro-to" id="intro-to">إلى مي...</h1>
+            <p class="intro-message" id="intro-message">فيه كلام اتكتب مخصوص علشانك.</p>
+        </div>
+    </div>
+
+    <!-- ===== ENVELOPE OVERLAY ===== -->
+    <div id="envelope-overlay">
+        <div class="envelope-wrapper">
+            <div class="envelope" id="envelope">
+                <!-- Envelope back -->
+                <div class="envelope-back"></div>
+                <!-- Letter that slides out -->
+                <div class="letter-inside" id="letter-inside">
+                    <div class="letter-inside-lines">
+                        <span></span><span></span><span></span>
+                        <span></span><span></span>
+                    </div>
+                </div>
+                <!-- Envelope front bottom -->
+                <div class="envelope-front"></div>
+                <!-- Envelope flap -->
+                <div class="envelope-flap" id="envelope-flap"></div>
+                <!-- Wax seal -->
+                <div class="wax-seal" id="wax-seal">
+                    <div class="seal-inner">
+                        <span class="seal-letter">M</span>
+                    </div>
+                    <div class="seal-shine"></div>
+                </div>
+            </div>
+            <p class="seal-hint" id="seal-hint">انقر على الختم</p>
+        </div>
+    </div>
+
+    <!-- ===== MAIN SCROLLABLE CONTENT ===== -->
+    <main id="main-content">
+
+        <!-- LETTER SECTION -->
+        <section id="letter-section">
+            <div class="letter-container">
+                <div class="letter-paper" id="letter-paper">
+                    <div class="paper-fold"></div>
+                    <div class="letter-content">
+                        <p class="letter-line">لما كنت بسمع أم كلثوم وهي بتقول:</p>
+                        <p class="letter-line quote-line">اللي شفته قبل ما تشوفك عينيّا...<br>عمر ضايع يحسبوه إزاي عليّا؟</p>
+                        <p class="letter-line">كنت بقول بيني وبين نفسي:</p>
+                        <p class="letter-line">لا أكيد دي مبالغة شوية.</p>
+                        <div class="letter-spacer"></div>
+                        <p class="letter-line">إزاي يعني حد يقدر يعتبر سنين كاملة من عمره كأنها ما اتحسبتش؟</p>
+                        <div class="letter-spacer"></div>
+                        <p class="letter-line">كنت فاكر إن كل حاجة عشناها ليها قيمة:</p>
+                        <p class="letter-line indented">كل ضحكة،</p>
+                        <p class="letter-line indented">كل وجع،</p>
+                        <p class="letter-line indented">وكل ذكرى.</p>
+                        <div class="letter-spacer"></div>
+                        <p class="letter-line">بس يوم ما دخلتي حياتي فهمت المعنى بجد.</p>
+                        <div class="letter-spacer"></div>
+                        <p class="letter-line">فهمت إن في فرق بين إنك تعيش...<br>وإنك تحس إنك بدأت تعيش فعلًا.</p>
+                        <div class="letter-spacer"></div>
+                        <p class="letter-line">حسيت إن كل اللي فات كان مجرد طريق بيمهدلي اللحظة اللي هقابلك فيها.</p>
+                        <div class="letter-spacer"></div>
+                        <p class="letter-line">وكأن الأيام قبل ما أشوفك كانت ماشية وخلاص،<br>لكن من ساعة ما عرفتك بقى للحياة لون وطعم ومعنى تاني.</p>
+                        <div class="letter-spacer"></div>
+                        <p class="letter-line">عشان كده دلوقتي أقدر أفهم أم كلثوم،<br>وأقول إنها ما كانتش بتبالغ خالص لما قالت:</p>
+                        <div class="letter-spacer"></div>
+                        <p class="letter-line highlight-line">إنتِ عمري.</p>
+
+                        <div class="letter-divider">
+                            <span>❦</span>
+                        </div>
+
+                        <div class="letter-signature">
+                            <span class="signature-text">محمد 🤎</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TIMELINE SECTION -->
+        <section id="timeline-section">
+            <div class="timeline-container">
+                <h2 class="timeline-title" id="timeline-title">الحاجات اللي غيرت حياتي</h2>
+                <div class="timeline">
+                    <div class="timeline-track" id="timeline-track"></div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"><span></span></div>
+                        <div class="timeline-card glass-card">
+                            <p>اليوم اللي عرفتك فيه</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"><span></span></div>
+                        <div class="timeline-card glass-card">
+                            <p>أول مرة ضحكت بسببك</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"><span></span></div>
+                        <div class="timeline-card glass-card">
+                            <p>أول مرة افتقدتك</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"><span></span></div>
+                        <div class="timeline-card glass-card">
+                            <p>أول مرة حسيت إنك بقيتي جزء من يومي</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"><span></span></div>
+                        <div class="timeline-card glass-card">
+                            <p>أول مرة فهمت معنى "إنتِ عمري"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MOON SECTION -->
+        <section id="moon-section">
+            <canvas id="moon-stars-canvas"></canvas>
+            <div class="moon-wrapper">
+                <div class="moon" id="moon">
+                    <div class="moon-glow"></div>
+                    <div class="moon-body">
+                        <div class="crater crater-1"></div>
+                        <div class="crater crater-2"></div>
+                        <div class="crater crater-3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="moon-text">
+                <p class="moon-line">لو كان عندي أمنية واحدة بس...</p>
+                <p class="moon-line">كنت هختار إن كل مرة أبص فيها للسما...</p>
+                <p class="moon-line moon-highlight">ألاقيكِ فيها.</p>
+            </div>
+        </section>
+
+        <!-- FINAL SECTION -->
+        <section id="final-section">
+            <canvas id="final-stars-canvas"></canvas>
+            <div class="final-content">
+                <p class="final-line final-name-line">مي...</p>
+                <p class="final-line">يمكن الحب بيتوصف بكلام كتير.</p>
+                <p class="final-line">بس أنا كل ما أحاول أوصفه...</p>
+                <p class="final-line final-highlight">بلاقي اسمه الوحيد هو إنتِ.</p>
+                <div class="final-divider"></div>
+                <div class="final-infinity" id="final-infinity">∞</div>
+                <p class="final-forever">Forever Yours</p>
+                <p class="final-signature">محمد</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Heartbeat pulse overlay -->
+    <div class="heartbeat-vignette" id="heartbeat-vignette"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
